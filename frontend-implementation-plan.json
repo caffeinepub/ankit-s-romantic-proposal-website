@@ -1,0 +1,25 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Replace YES button celebration with WhatsApp redirect",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Replace the YES button's celebration overlay with a WhatsApp redirect that opens a pre-filled message",
+      "acceptanceCriteria": [
+        "Clicking 'YES 💍' opens WhatsApp (via wa.me deep link) with the message 'I said YES ❤️' pre-filled and the recipient set to +918810471387.",
+        "The full-screen confetti/fireworks/hearts celebration overlay no longer appears when YES is clicked.",
+        "All visual styling, hover effects, and animations on the YES button itself remain unchanged.",
+        "The 'THINK AGAIN' button still functions as before (cursor-dodging behavior intact).",
+        "No other sections or components are affected."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/FinalProposalSection.tsx",
+          "operation": "modify",
+          "description": "Remove the full-screen confetti/fireworks/hearts celebration overlay state and rendering logic. Update the YES button's onClick handler to redirect to WhatsApp using the deep link https://wa.me/918810471387?text=I%20said%20YES%20%E2%9D%A4%EF%B8%8F instead of triggering the celebration. Preserve all existing button styling, hover effects, animations, and the THINK AGAIN button's cursor-dodging behavior. Do not modify any other visual elements or layout."
+        }
+      ]
+    }
+  ]
+}

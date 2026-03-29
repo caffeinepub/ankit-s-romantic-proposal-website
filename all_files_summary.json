@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting that FinalProposalSection.tsx was updated to redirect the YES button to WhatsApp with a pre-filled message, replacing the previous celebration overlay.",
+  "frontend-file-summaries.txt": "JSON map of all frontend source files to their one-line descriptions, serving as a quick reference for the project's component and style structure.",
+  "frontend/index.css": "Tailwind base CSS file defining OKLCH-based CSS custom properties for light and dark theme color tokens including background, foreground, primary, chart, and sidebar variables.",
+  "frontend/index.html": "HTML entry point that loads Playfair Display and Poppins fonts from Google Fonts and mounts the React app via the root div and main.tsx module script.",
+  "frontend/src/App.tsx": "Root React component that assembles the full single-page romantic proposal layout by composing all section and UI components in order.",
+  "frontend/src/components/FinalProposalSection.tsx": "Final proposal section featuring a YES button that opens WhatsApp with a pre-filled 'I said YES ❤️' message to +918810471387, and a THINK AGAIN button that dodges away on hover/click using randomized transforms.",
+  "frontend/src/components/FloatingHearts.tsx": "Background decoration component that renders 18 SVG hearts with randomized sizes, positions, and floatUp animations continuously rising across the viewport.",
+  "frontend/src/components/Footer.tsx": "Romantic footer displaying 'Made with Love by Ankit', pulsing heart decorations, a caffeine.ai attribution link with UTM tracking, and a dynamic copyright year.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with a sunset background image, animated gradient overlay, CSS sparkle icons, a glowing 'YOUR ANKIT?' heading, and a CTA button that smooth-scrolls to the journey section.",
+  "frontend/src/components/MusicToggle.tsx": "Fixed-position music toggle button that plays/pauses a looping background audio track, switching between Music and VolumeX icons with glowing romantic styling.",
+  "frontend/src/components/OurJourneySection.tsx": "Renders a timeline section displaying five relationship memories as alternating left/right cards with scroll-triggered fade-in animations and a vertical center line.",
+  "frontend/src/components/SecretMessageSection.tsx": "Renders a password-protected section that reveals a personal love letter when the correct password ('Meolove') is entered, with idle/wrong/revealed states.",
+  "frontend/src/components/WhyYouAreSpecialSection.tsx": "Displays a grid of heart-shaped floating cards, each representing a personal trait, with scroll-triggered fade-in and hover glow effects.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor (authenticated or anonymous) using React Query, and invalidates dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an Internet Identity authentication context and hook, managing AuthClient creation, login/logout flow, and identity persistence across page reloads.",
+  "frontend/src/index.css": "Global stylesheet defining a romantic pastel design system with Tailwind base layers, CSS custom properties, and keyframe animations (heartPulse, floatBob, glowPulse, etc.).",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app wrapped with QueryClientProvider and InternetIdentityProvider.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration with dark mode, custom fonts (Playfair Display, Poppins), oklch-based color tokens, extended border radii, box shadows, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Tracks project state for a romantic proposal website where the YES button redirects to WhatsApp with a pre-filled message, replacing the previous confetti celebration overlay."
+}

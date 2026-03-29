@@ -1,0 +1,46 @@
+{
+  "kind": "build_request",
+  "title": "Replace YES button celebration with WhatsApp redirect",
+  "projectName": "Proposal for Meo",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "In FinalProposalSection.tsx, update the 'YES 💍' button so that clicking it opens WhatsApp with the pre-filled message 'I said YES ❤️' sent to +918810471387 using the deep link format https://wa.me/918810471387?text=I%20said%20YES%20%E2%9D%A4%EF%B8%8F. Remove the current full-screen confetti/fireworks/hearts celebration overlay and replace it entirely with this WhatsApp redirect. All other styling, animations, layout, and the 'THINK AGAIN' button behavior must remain completely unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-14"
+        ],
+        "quotes": [
+          "When someone clicks YES, it should open WhatsApp and send a pre-filled message to my number.",
+          "WhatsApp number: 918810471387",
+          "Message text: \"I said YES ❤️\"",
+          "Replace the current celebration animation with this WhatsApp redirect.",
+          "Keep all styling, animations, and design the same."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking 'YES 💍' opens WhatsApp (via wa.me deep link) with the message 'I said YES ❤️' pre-filled and the recipient set to +918810471387.",
+        "The full-screen confetti/fireworks/hearts celebration overlay no longer appears when YES is clicked.",
+        "All visual styling, hover effects, and animations on the YES button itself remain unchanged.",
+        "The 'THINK AGAIN' button still functions as before (cursor-dodging behavior intact).",
+        "No other sections or components are affected."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any styling, animations, or design elements outside of removing the celebration overlay.",
+    "Do not change the 'THINK AGAIN' button behavior.",
+    "Do not alter any other section components."
+  ],
+  "nonGoals": [
+    "Adding new animations or visual effects.",
+    "Changing any text content outside of the YES button action.",
+    "Modifying backend logic."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
